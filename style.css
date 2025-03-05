@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --back:rgba(105, 105, 105, 1);
+    --main_text: white;
+    --normal_stuff: black;
+    --foot:rgba(52, 52, 52, 1);
+    --at_hover:rgba(223, 223, 223, 1);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    box-sizing: border-box;
+    background-color: var(--back);
+    color: var(--normal_stuf);
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.brain{
+    padding: 2% 0px 0px 15%;
+}
+
+.brain__menu{
+    display: flex;
+    gap: 60px;
+}
+
+.brain__menu__link{
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--main_text);
+    text-decoration: none;
+}
+
+.brain__menu__link:hover{
+    color: var(--at_hover);
+}
+
+.reveal-text{
+    color: var(--main_text);
+}
+
+.daddy{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7.3% 15%;
+    gap:82px;
+}
+
+.daddy__resume{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.daddy__pascaltext{
+    width: 389px;
+    font-family: "Krona One", sans-serif;
+    font-size: 0.93rem;
+    color: var(--main_text);
+}
+
+.title__resume{
+    font-size: 2rem;
+    font-family: "Krona One", sans-serif;
+    color: var(--main_text);
+}
+
+.resume__content{
+    font-size: 1.5rem;
+    font-family: "Krona One", sans-serif;
+}
+
+.daddy__links{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.daddy__links__subtitle{
+    font-size: 1.5rem;
+    color: var(--main_text);
+    font-family: "Krona One", sans serif;
+}
+
+.daddy__links__link{
+    display: flex;
+    background-color: var(--main_text);
+    width: 250px;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    padding: 12px 0;
+    text-decoration: none; 
+    font-family: "Krona One", sans-serif;
+}
+
+.daddy__links__link:hover{
+    background-color:var(--at_hover);
+}
+
+.daddy__links__link a{
+    text-decoration: none;
+    color: var(--normal_stuff);
+}
+
+.daddy__links__link img{
+    vertical-align: middle;
+}
+
+.link_git{
+    text-decoration: none;
+}
+
+
+.foot{
+    color: var(--main_text);
+    background-color: var(--foot);
+    padding: 15px;
+    text-align: center;
+    font-family: "Krona One", sans serif;
+    font-size: 1.125rem;
+}
+
+.about__content{
+    font-size: 1.25rem;
+    font-family: "Roboto", sans serif;
+    color: var(--main_text);
+}
+
+@media(max-width: 1200px){
+
+
+    .brain{
+	padding: 10%
+    }
+
+    .brain__menu{
+	justify-content: center;
+    }
+
+    
+    .daddy{
+	flex-direction: column-reverse;
+	padding: 5%;
+    }
+
+    .daddy__resume{
+	width: auto;
+    }
+
+}
